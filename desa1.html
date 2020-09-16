@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>web 360</title>
+        <link rel="stylesheet" href="style2.css">
+        <body>
+            <section class="banner" id="sec">
+                <header>
+                    <a href="#" class="logo">web<span>360</span></a>
+                    <div id="toggle" onclick="toggle()"></div>
+                </header>
+
+
+                <div class="container">
+                    <div class="card">
+                        <div class="imgBox">
+                            <video src="desa1map1.mp4" muted autoplay loop></video>
+                        </div>
+                        <div class="contentBox">
+                            <div class="content">
+                                <h2>Desa <span>Pandanwangi</span></h2>
+                                <h3>Peneliti : <span>Pak Rama dkk.</span></h3>
+                                <h3>Tanggal penelitian : <span>24-03-20</span></h3>
+                                <h3>Deskripsi : <span>desa keren banget yang bisa jadi objek wisata terbaik di cianjur</span></h3>
+                                <div class="container2">
+                                    <button class="btn btn1" onclick="window.location.href='./caption_keren.html'">Back</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+
+
+
+
+            </section>
+            
+            <div id="navigation">
+                <ul>
+                    <li><a href="./index.html">home</a></li>
+                    <li><a href="#"><span>research</span></a></li>
+                    <li><a href="./devpage.html">developer</a></li>
+                </ul>
+            </div>
+            <script type="text/javascript">
+            function toggle(){
+                var sec = document.getElementById('sec');
+                var nav = document.getElementById('navigation');
+                sec.classList.toggle('active');
+                nav.classList.toggle('active');
+            }
+            </script>
+        </body>
+    </head>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>web 360</title>
+        <link rel="stylesheet" href="style.css">
+        <body>
+            <section class="banner" id="sec">
+                <header>
+                    <a href="#" class="logo">web<span>360</span></a>
+                    <div id="toggle" onclick="toggle()"></div>
+                </header>
+                    <div class="content">
+                        <h2>Selamat datang <span>peneliti</span></h2>
+                        <p>ini hanya contoh kalimat saja
+                            ini hanya contoh kalimat saja
+                            ini hanya contoh kalimat saja
+                            ini hanya contoh kalimat saja
+                            ini hanya contoh kalimat saja
+                        </p>
+                     
+                    </div>
+            </section>
+            <div id="navigation">
+                <ul>
+                    <li><a href="#"><span>home</span></a></li>
+                    <li><a href="./caption_keren.html">research</a></li>
+                    <li><a href="./devpage.html">developer</a></li>
+                </ul>
+            </div>
+            <script type="text/javascript">
+            function toggle(){
+                var sec = document.getElementById('sec');
+                var nav = document.getElementById('navigation');
+                sec.classList.toggle('active');
+                nav.classList.toggle('active');
+            }
+            </script>
+        </body>
+    </head>
+</html>

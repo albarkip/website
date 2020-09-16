@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>web 360</title>
+        <link rel="stylesheet" href="style1.css">
+        <body>
+            <section class="banner" id="sec">
+                <header>
+                    <a href="#" class="logo">web<span>360</span></a>
+                    <div id="toggle" onclick="toggle()"></div>
+                </header>
+
+                <div class="container">
+                    <div class="box">
+                        <div class="videoBox">
+                            <video src="bg1.mp4" muted autoplay loop></video>
+                        </div>
+                        <div class="contentBox">
+                            <div class="content">
+                                <h2>Desa <span>Pandanwangi</span></h2>
+                                <p>
+                                    ini desa yang penelitiannya dilakukan
+                                    oleh pa rama dkk di cianjur yang menjadi
+                                    project 360 pertama bersama tim developer
+                                </p>
+                                <div class="container2">
+                                    <button class="btn btn1" onclick="window.location.href='./desa1.html'">Open</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="box">
+                        <div class="videoBox">
+                            <img src="comsoon.png" alt="">
+                        </div>
+                        <div class="contentBox">
+                            <div class="content">
+                                <h2>Coming<span>Soon</span></h2>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <div id="navigation">
+                <ul>
+                    <li><a href="./index.html">home</a></li>
+                    <li><a href="#"><span>research</span></a></li>
+                    <li><a href="./devpage.html">developer</a></li>
+                </ul>
+            </div>
+            <script type="text/javascript">
+            function toggle(){
+                var sec = document.getElementById('sec');
+                var nav = document.getElementById('navigation');
+                sec.classList.toggle('active');
+                nav.classList.toggle('active');
+            }
+            </script>
+        </body>
+    </head>
+</html>

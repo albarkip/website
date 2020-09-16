@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>web 360</title>
+        <link rel="stylesheet" href="style3.css">
+        <body>
+            <section class="banner" id="sec">
+                <header>
+                    <a href="#" class="logo">web<span>360</span></a>
+                    <div id="toggle" onclick="toggle()"></div>
+                </header>
+                
+                <div class="slide">
+                    <div class="content">
+                        <h2>Fachri Veryawan Mahkota</h2>
+                        <h1>The <span>KING</span></h1>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="content">
+                        <h2>Muhammad Argi Nafisa</h2>
+                        <h1>The <span>HACKER</span></h1>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="content">
+                        <h2>Albari Berki Pradhana</h2>
+                        <h1>The <span>GOAT</span></h1>
+                    </div>
+                </div>
+                <div class="contain">
+                    <h1>developer <br> <span>team</span></h1><br>
+                </div>
+            </section>
+            <div id="navigation">
+                <ul>
+                    <li><a href="./index.html">home</a></li>
+                    <li><a href="./caption_keren.html">research</a></li>
+                    <li><a href="#"><span>developer</span></a></li>
+                </ul>
+            </div>
+            <script type="text/javascript">
+            function toggle(){
+                var sec = document.getElementById('sec');
+                var nav = document.getElementById('navigation');
+                sec.classList.toggle('active');
+                nav.classList.toggle('active');
+            }
+            </script>
+        </body>
+    </head>
+</html>
